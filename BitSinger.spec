@@ -3,8 +3,8 @@
 block_cipher = None
 
 
-a = Analysis(['TWayFoil.py'],
-             pathex=['C:\\A137442\\Python\\TWayFoil'],
+a = Analysis(['BitSinger.py'],
+             pathex=['C:\\A137442\\Python\\BitSinger'],
              binaries=[],
              datas=[],
              hiddenimports=[],
@@ -23,7 +23,7 @@ exe = EXE(pyz,
           a.zipfiles,
           a.datas,
           [],
-          name='TWayFoil',
+          name='BitSinger',
           debug=False,
           bootloader_ignore_signals=False,
           strip=False,
