@@ -1,6 +1,4 @@
-import errno
-import os
-import traceback
+from traceback import format_exc
 from winsound import Beep
 
 from tqdm import tqdm
@@ -35,7 +33,7 @@ def inputStrListBL(en='',zh='',endChar=''):return inputStrList(gsbl(en=en,zh=zh)
 
 #====Functions Utils====#
 def printExcept(exc,funcPointer):
-    print(funcPointer+gsbl(en="A exception was found:",zh="\u53d1\u73b0\u5f02\u5e38\uff1a"),exc,"\n"+traceback.format_exc())
+    print(funcPointer+gsbl(en="A exception was found:",zh="\u53d1\u73b0\u5f02\u5e38\uff1a"),exc,"\n"+format_exc())
 
 def InputYN(head,defaultFalse=True):
     yn=input(head)
